@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Bench Press",
+    "description": "Classic chest exercise using barbell",
+    "category": "strength",
+    "muscleGroups": ["chest", "triceps", "shoulders"],
+    "equipment": ["barbell", "bench"],
+    "difficulty": "intermediate",
+    "instructions": [
+      "Lie flat on bench with feet on floor",
+      "Grip bar slightly wider than shoulder width",
+      "Lower bar to mid-chest with control",
+      "Press bar up until arms are extended"
+    ],
+    "isCustom": false,
+    "createdBy": null
+  },
+  {
+    "name": "Squats",
+    "description": "Compound leg exercise",
+    "category": "strength",
+    "muscleGroups": ["quads", "glutes", "hamstrings"],
+    "equipment": ["barbell"],
+    "difficulty": "intermediate",
+    "instructions": [
+      "Stand with feet shoulder-width apart",
+      "Lower body by bending knees",
+      "Keep chest up and back straight",
+      "Push through heels to return to start"
+    ],
+    "isCustom": false,
+    "createdBy": null
+  },
+  {
+    "name": "Running",
+    "description": "Cardiovascular endurance exercise",
+    "category": "cardio",
+    "muscleGroups": ["full-body"],
+    "equipment": ["none"],
+    "difficulty": "beginner",
+    "instructions": [
+      "Start at comfortable pace",
+      "Maintain steady breathing",
+      "Keep proper running form"
+    ],
+    "isCustom": false,
+    "createdBy": null
+  }
+]
