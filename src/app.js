@@ -29,6 +29,8 @@ const { authLimiter } = require('./middleware/rateLimiter');
 app.use('/api/auth', authLimiter, require('./routes/auth'));
 app.use('/api/users', require('./routes/users'));
 app.use('/api/exercises', require('./routes/exercises'));
+app.use('/api/workouts', require('./routes/workouts'));      
+app.use('/api/goals', require('./routes/goals'));            
 
 app.use(errorHandler);
 

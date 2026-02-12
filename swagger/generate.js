@@ -6,8 +6,8 @@ const doc = {
     description: 'Fitness & Workout Tracker API with authentication',
     version: '1.0.0'
   },
-  host: 'localhost:3000',
-  schemes: ['http', 'https'],
+  host: 'fittrack-api-9t3c.onrender.com',
+  schemes: ['http'],
   securityDefinitions: {
     bearerAuth: {
       type: 'apiKey',
@@ -19,7 +19,9 @@ const doc = {
   tags: [
     { name: 'Auth', description: 'Authentication endpoints' },
     { name: 'Users', description: 'User management' },
-    { name: 'Exercises', description: 'Exercise management' }
+    { name: 'Exercises', description: 'Exercise management' },
+    { name: 'Workouts', description: 'Workout tracking' },
+    { name: 'Goals', description: 'Goal management' }
   ],
   definitions: {
     User: {
@@ -36,6 +38,35 @@ const doc = {
       equipment: ['barbell', 'bench'],
       difficulty: 'intermediate',
       instructions: ['Lie on bench', 'Lower bar to chest', 'Press up']
+    },
+    Workout: {
+      name: 'Chest Day',
+      type: 'strength',
+      date: '2026-02-11T10:00:00Z',
+      exercises: [
+        {
+          exerciseId: '507f1f77bcf86cd799439011',
+          exerciseName: 'Bench Press',
+          sets: [
+            { setNumber: 1, reps: 10, weightKg: 60, completed: true }
+          ]
+        }
+      ],
+      totalDurationMinutes: 45,
+      caloriesBurned: 250,
+      rating: 5
+    },
+    Goal: {
+      title: 'Lose 10kg',
+      description: 'Weight loss goal',
+      type: 'weight-loss',
+      targetMetric: {
+        metricType: 'weight',
+        currentValue: 90,
+        targetValue: 80,
+        unit: 'kg'
+      },
+      targetDate: '2026-05-11T00:00:00Z'
     }
   }
 };
