@@ -7,7 +7,7 @@ const doc = {
     version: '1.0.0'
   },
   host: 'fittrack-api-9t3c.onrender.com',
-  schemes: ['http'],
+  schemes: ['https'],
   securityDefinitions: {
     bearerAuth: {
       type: 'apiKey',
